@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop - Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tabs a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .tabs a.active {
+            color: green;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #028a28;
+        }
+        .or {
+            text-align: center;
+            margin: 15px 0;
+            color: #888;
+        }
+        .social-buttons button {
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            font-size: 14px;
+        }
+        .social-buttons button img {
+            width: 12px;
+            margin-right: 10px;
+        }
+        .social-buttons button.google {
+            border-color: #eaeaea;
+        }
+        .social-buttons button.facebook {
+            border-color: #eaeaea;
+        }
+        .social-buttons button.google span {
+            color: #000000;
+        }
+        .social-buttons button.facebook {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Registration</h2>
+    <div class="tabs">
+        <a href="#" class="active">Login</a>
+        <span>|</span>
+        <a href="#">Register</a>
+    </div>
+    <p style="text-align: center;">Enter your email and password to register.</p>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="email">Enter your email address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+        <button type="submit">Register</button>
+    </form>
+    <p class="or">Or register with</p>
+    <div class="social-buttons">
+        <button class="google">
+            <img src="FilesForURLsand Pics/GOOGLE.png" height="16" width="100" alt="Google"/>
+            <span>Continue with Google‎ ‎ ‎ ‎ </span>
+        </button>
+        <button class="facebook">
+            <img src="FilesForURLsand Pics/FACEBOOK.jpg" height="16" width="100" alt="Google"/>
+            <span>Continue with Facebook‎ ‎ ‎ ‎</span>
+
+        </button>
+    </div>
+</div>
+</body>
+</html>
